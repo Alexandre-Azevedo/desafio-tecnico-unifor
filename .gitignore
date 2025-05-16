@@ -1,0 +1,46 @@
+# ---------------------
+# Node / Angular
+# ---------------------
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.output/
+frontend/.env
+
+# ---------------------
+# Java / Maven
+# ---------------------
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.env
+
+# ---------------------
+# IDEs
+# ---------------------
+*.iml
+.idea/
+.vscode/
+*.sw?
+
+# ---------------------
+# OS
+# ---------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------
+# Docker volumes / Logs
+# ---------------------
+**/logs/
+**/*.log
+**/.docker-volume/
+
+# ---------------------
+# Misc
+# ---------------------
+.env
+.env.*
+*.bak
+*.tmp

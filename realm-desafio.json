@@ -1,0 +1,45 @@
+{
+  "realm": "desafio",
+  "registrationEmailAsUsername": false,
+  "loginWithEmailAllowed": false,
+  "verifyEmail": false,
+  "enabled": true,
+  "roles": {
+    "realm": [
+      { "name": "ADMIN" },
+      { "name": "COORDENADOR" },
+      { "name": "PROFESSOR" },
+      { "name": "ALUNO" }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "backend-service",
+      "secret": "super-secret-value",
+      "name": "Backend Quarkus",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "serviceAccountsEnabled": true
+    }
+  ],
+  "users": [
+    {
+      "username": "admin@unifor.br",
+      "enabled": true,
+      "emailVerified": true,
+      "email": "admin@unifor.br",
+      "firstName": "Administrador",
+      "lastName": "Sistema",
+      "realmRoles": ["ADMIN"],
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin123"
+        }
+      ]
+    }
+  ]
+}
