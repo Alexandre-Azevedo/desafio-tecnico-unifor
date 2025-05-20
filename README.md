@@ -47,22 +47,24 @@ Authorization: Bearer <seu_token>
 #### Exemplo de Body para criação:
 ```json
 {
-  "nome": "João da Silva",
+  "firstname": "João",
+  "lastName": "Silva",
   "email": "joao@exemplo.com",
   "username": "joaosilva",
-  "perfil": "ALUNO",
-  "senha": "senha123"
+  "realmRoles": "ALUNO",
+  "password": "senha123"
 }
 ```
 
 #### Exemplo de Body para atualização:
 ```json
 {
-  "nome": "João da Silva",
+  "firstname": "João",
+  "lastName": "Silva",
   "email": "joao@exemplo.com",
   "username": "joaosilva",
-  "perfil": "ALUNO",
-  "senha": "novaSenha"
+  "realmRoles": "ALUNO",
+  "password": "senha123"
 }
 ```
 
