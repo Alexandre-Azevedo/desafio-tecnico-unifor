@@ -8,11 +8,13 @@ import javax.persistence.Enumerated;
 @Entity
 public class Usuario extends PanacheEntity {
 
-    public String nome;
+    public String id;
+    public String firstName;
+    public String lastName;
     public String email;
     public String username;
-    public String senha;
+    public String password;
 
     @Enumerated(EnumType.STRING)
-    public Perfil perfil;
+    public RealmRoles realmRoles;
 }

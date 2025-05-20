@@ -11,7 +11,7 @@ import java.util.List;
 @Entity
 public class Semestre extends PanacheEntity {
 
-    public int numero;
+    public Integer numero;
 
     @ManyToOne
     public Curso curso;

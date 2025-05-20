@@ -54,15 +54,26 @@ services:
         condition: service_started
     command: ["./wait-for-it.sh", "keycloak:8080", "--", "java", "-jar", "app.jar"]
 
-  #frontend:
-    #build:
-      #context: ./frontend
-      #dockerfile: Dockerfile
-    #container_name: desafio_frontend
-    #ports:
-      #- "4200:80"
-    #depends_on:
-      #- backend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: desafio_frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+  
+  # provisioner:
+  #   build:
+  #     context: ./provisioner
+  #     dockerfile: Dockerfile
+  #   container_name: keycloak_provisioner
+  #   depends_on:
+  #     keycloak:
+  #       condition: service_healthy
+  #   entrypoint: ["sh", "./provision_keycloak.sh"]
+
 
 volumes:
   pgdata:

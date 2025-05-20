@@ -22,7 +22,8 @@
       "publicClient": false,
       "standardFlowEnabled": false,
       "directAccessGrantsEnabled": true,
-      "serviceAccountsEnabled": true
+      "serviceAccountsEnabled": true,
+      "fullScopeAllowed": true
     }
   ],
   "users": [
