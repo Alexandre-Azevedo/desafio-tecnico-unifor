@@ -177,7 +177,7 @@ Authorization: Bearer <seu_token>
 - Projeto frontend incompleto apenas com o CRUD de usuários implementado e segurança das rotas implementadas Roles do Keycloak.
 - No backend todo o projeto está completo.
 - Recomendo mudar a senha padrão do usuário admin padrão, através da interface do frontend ou localhos:8080(Selecionando a realm desafio, indo em users e editando a senha).
-- Quando subir o sistema o usuário admin deve acessar localhos:8080, ir no realm desafio, clients, backend-service, services account roles, assign role, filter by cilents e buscar realm-management realm-admin e associar ao client, essa configuração só consegue ser feita através da interface do Keycloack e é necessária para criação de novos usuários através do admin.
+- Quando subir o sistema o usuário admin(usuário: 'admin@unifor.br', senha: 'admin123') deve acessar localhos:8080, ir no realm desafio, clients, backend-service, services account roles, assign role, filter by cilents e buscar realm-management realm-admin e associar ao client, essa configuração só consegue ser feita através da interface do Keycloack e é necessária para criação de novos usuários através do admin.
 
 ---
 
